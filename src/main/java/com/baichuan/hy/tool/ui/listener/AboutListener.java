@@ -30,30 +30,7 @@ public class AboutListener {
                 super.mouseClicked(e);
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project"));
-                } catch (IOException | URISyntaxException e1) {
-                    e1.printStackTrace();
-                }
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                super.mousePressed(e);
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e);
-                e.getComponent().setCursor(new Cursor(Cursor.HAND_CURSOR));
-            }
-        });
-        aboutForm.getCodeGiteeLabel().addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                Desktop desktop = Desktop.getDesktop();
-                try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project"));
+                    desktop.browse(new URI("https://github.com/arvinBaichuan/HyTool"));
                 } catch (IOException | URISyntaxException e1) {
                     e1.printStackTrace();
                 }
@@ -76,7 +53,7 @@ public class AboutListener {
                 super.mouseClicked(e);
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project/issues"));
+                    desktop.browse(new URI("https://github.com/arvinBaichuan/HyTool/issues"));
                 } catch (IOException | URISyntaxException e1) {
                     e1.printStackTrace();
                 }

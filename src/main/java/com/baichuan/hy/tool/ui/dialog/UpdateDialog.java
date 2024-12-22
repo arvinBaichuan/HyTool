@@ -81,7 +81,7 @@ public class UpdateDialog extends JDialog {
         buttonDownloadFromWeb.addActionListener(e -> {
             Desktop desktop = Desktop.getDesktop();
             try {
-                desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project/releases"));
+                desktop.browse(new URI("https://github.com/arvinBaichuan/HyTool/releases"));
             } catch (IOException | URISyntaxException ex) {
                 ex.printStackTrace();
             }

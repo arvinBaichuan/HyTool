@@ -29,7 +29,6 @@ public class AboutDialog extends JDialog {
     private JScrollPane scrollPane;
     private JLabel versionLabel;
     private JLabel codeGitHubLabel;
-    private JLabel codeGiteeLabel;
     private JLabel issueLabel;
     private JLabel hutoolLabel;
     private JLabel vsCodeIconsLabel;
@@ -121,30 +120,7 @@ public class AboutDialog extends JDialog {
                 super.mouseClicked(e);
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project"));
-                } catch (IOException | URISyntaxException e1) {
-                    e1.printStackTrace();
-                }
-            }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                super.mousePressed(e);
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e);
-                e.getComponent().setCursor(new Cursor(Cursor.HAND_CURSOR));
-            }
-        });
-        codeGiteeLabel.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                Desktop desktop = Desktop.getDesktop();
-                try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project"));
+                    desktop.browse(new URI("https://github.com/arvinBaichuan/HyTool"));
                 } catch (IOException | URISyntaxException e1) {
                     e1.printStackTrace();
                 }
@@ -167,7 +143,7 @@ public class AboutDialog extends JDialog {
                 super.mouseClicked(e);
                 Desktop desktop = Desktop.getDesktop();
                 try {
-                    desktop.browse(new URI("https://github.com/arvinBaichuan/java-form-project/issues"));
+                    desktop.browse(new URI("https://github.com/arvinBaichuan/HyTool/issues"));
                 } catch (IOException | URISyntaxException e1) {
                     e1.printStackTrace();
                 }
@@ -315,7 +291,7 @@ public class AboutDialog extends JDialog {
         label1.setText("Handy desktop toolset for developers");
         panel2.add(label1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         authorLabel = new JLabel();
-        authorLabel.setText("Proudly by arvinBaichuan 李烨");
+        authorLabel.setText("Proudly by arvinBaichuan");
         panel2.add(authorLabel, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         versionLabel = new JLabel();
         Font versionLabelFont = this.$$$getFont$$$(null, Font.BOLD, -1, versionLabel.getFont());
@@ -343,21 +319,18 @@ public class AboutDialog extends JDialog {
         label6.setText("Hope you enjoy using it as much as I did building it.");
         panel3.add(label6, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JPanel panel4 = new JPanel();
-        panel4.setLayout(new GridLayoutManager(2, 1, new Insets(5, 3, 20, 0), -1, -1));
+        panel4.setLayout(new GridLayoutManager(1, 1, new Insets(5, 3, 20, 0), -1, -1));
         panel1.add(panel4, new GridConstraints(3, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         panel4.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "CODE", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, this.$$$getFont$$$(null, Font.BOLD, -1, panel4.getFont()), null));
         codeGitHubLabel = new JLabel();
-        codeGitHubLabel.setText("<html>GitHub：<a href=\"https://github.com/arvinBaichuan/java-form-project\">https://github.com/arvinBaichuan/java-form-project</a></html>");
+        codeGitHubLabel.setText("<html>GitHub：<a href=\"https://github.com/arvinBaichuan/HyTool\">https://github.com/arvinBaichuan/HyTool</a></html>");
         panel4.add(codeGitHubLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        codeGiteeLabel = new JLabel();
-        codeGiteeLabel.setText("<html>Gitee：<a href=\"https://github.com/arvinBaichuan/java-form-project\">https://github.com/arvinBaichuan/java-form-project</a></html>");
-        panel4.add(codeGiteeLabel, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JPanel panel5 = new JPanel();
         panel5.setLayout(new GridLayoutManager(1, 1, new Insets(5, 3, 20, 0), -1, -1));
         panel1.add(panel5, new GridConstraints(4, 0, 1, 2, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         panel5.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEmptyBorder(), "HELP TO DO BETTER", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, this.$$$getFont$$$(null, Font.BOLD, -1, panel5.getFont()), null));
         issueLabel = new JLabel();
-        issueLabel.setText("<html><a href=\"https://github.com/arvinBaichuan/java-form-project/issues\">https://github.com/arvinBaichuan/java-form-project/issues</a></html>");
+        issueLabel.setText("<html><a href=\"https://github.com/arvinBaichuan/HyTool/issues\">https://github.com/arvinBaichuan/HyTool/issues</a></html>");
         panel5.add(issueLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JPanel panel6 = new JPanel();
         panel6.setLayout(new GridLayoutManager(3, 1, new Insets(5, 3, 20, 0), -1, -1));

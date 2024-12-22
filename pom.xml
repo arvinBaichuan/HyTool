@@ -6,7 +6,7 @@
 
     <groupId>com.baichuan.hy.tool</groupId>
     <artifactId>HyTool</artifactId>
-    <version>1.6.5</version>
+    <version>0.0.0</version>
     <packaging>jar</packaging>
 
     <name>HyTool</name>

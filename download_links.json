@@ -1,6 +1,6 @@
 {
-  "windows": "https://github.com/arvinBaichuan/java-form-project/releases/download/v1.6.5/HyTool-1.6.5-windows.exe",
-  "mac": "https://github.com/arvinBaichuan/java-form-project/releases/download/v1.6.5/HyTool_1.6.5.dmg",
-  "macSilicon": "https://github.com/arvinBaichuan/java-form-project/releases/download/v1.6.5/HyTool_1.6.5-AppleSilicon.dmg",
-  "linux": "https://github.com/arvinBaichuan/java-form-project/releases/download/v1.6.5/HyTool_1.6.5.deb"
+  "windows": "https://github.com/arvinBaichuan/HyTool/releases/download/v0.0.0/HyTool-0.0.0-windows.exe",
+  "mac": "https://github.com/arvinBaichuan/HyTool/releases/download/v0.0.0/HyTool_0.0.0.dmg",
+  "macSilicon": "https://github.com/arvinBaichuan/HyTool/releases/download/v0.0.0/HyTool_0.0.0-AppleSilicon.dmg",
+  "linux": "https://github.com/arvinBaichuan/HyTool/releases/download/v0.0.0/HyTool_0.0.0.deb"
 }

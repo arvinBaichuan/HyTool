@@ -6,10 +6,9 @@ Handy tool set for developers.
 开发者常备小工具
 借鉴MooTool项目，在此基础上进行工具增加及拓展
 
-[![码云Gitee](https://github.com/arvinBaichuan/java-form-project/badge/star.svg?theme=blue)](https://github.com/arvinBaichuan/java-form-project)
-[![GitHub stars](https://img.shields.io/github/stars/arvinBaichuan/HyTool.svg)](https://github.com/arvinBaichuan/java-form-project)
-[![GitHub release](https://img.shields.io/github/v/release/arvinBaichuan/HyTool)](https://github.com/arvinBaichuan/java-form-project/releases)
-[![GitHub license](https://img.shields.io/github/license/arvinBaichuan/HyTool)](https://github.com/arvinBaichuan/java-form-project/blob/master/LICENSE.txt)
+[![GitHub stars](https://img.shields.io/github/stars/arvinBaichuan/HyTool.svg)](https://github.com/arvinBaichuan/HyTool)
+[![GitHub release](https://img.shields.io/github/v/release/arvinBaichuan/HyTool)](https://github.com/arvinBaichuan/HyTool/releases)
+[![GitHub license](https://img.shields.io/github/license/arvinBaichuan/HyTool)](https://github.com/arvinBaichuan/HyTool/blob/master/LICENSE.txt)
 
 <a href="https://hellogithub.com/repository/4e5f287079734f98890a69d56000b361" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=4e5f287079734f98890a69d56000b361&claim_uid=0UhXFJvP9ndHtiB" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
@@ -17,42 +16,6 @@ Handy tool set for developers.
 Windows • Linux • macOS
 
 ## 截图速览
-
-![Overview](screen_shoot/quick_note_2_mac.png)
-
-![Overview](screen_shoot/quick_replace_mac.png)
-
-![Overview](screen_shoot/time_mac_2.png)
-
-![Overview](screen_shoot/json_mac_2.png)
-
-![Overview](screen_shoot/host_mac_2.png)
-
-![Overview](screen_shoot/http_mac_2.png)
-
-![Overview](screen_shoot/encode_mac_2.png)
-
-![Overview](screen_shoot/qr_code_mac_2.png)
-
-![Overview](screen_shoot/crypto_mac_2.png)
-
-![Overview](screen_shoot/calculator_mac_2.png)
-
-![Overview](screen_shoot/net_mac_2.png)
-
-![Overview](screen_shoot/color_board_mac_2.png)
-
-![Overview](screen_shoot/regex_mac_2.png)
-
-![Overview](screen_shoot/cron_mac_2.png)
-
-![Overview](screen_shoot/java_mac_2.png)
-
-![Overview](screen_shoot/mt-favoriteColor.png)
-
-![Overview](screen_shoot/quick_note_light_mac.png)
-
-![Overview](screen_shoot/theme.png)
 
 ## 支持的功能
 
@@ -81,8 +44,7 @@ Windows • Linux • macOS
 
 ## 下载
 
-[https://github.com/arvinBaichuan/java-form-project/releases](https://github.com/arvinBaichuan/java-form-project/releases)  
-[https://github.com/arvinBaichuan/java-form-project/releases](https://github.com/arvinBaichuan/java-form-project/releases)
+[https://github.com/arvinBaichuan/HyTool/releases](https://github.com/arvinBaichuan/HyTool/releases)  
 
 ## 特别感谢
 

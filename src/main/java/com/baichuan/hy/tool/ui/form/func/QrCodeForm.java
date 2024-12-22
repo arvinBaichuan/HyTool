@@ -254,7 +254,7 @@ public class QrCodeForm {
         if (tQrCode != null && StringUtils.isNotEmpty(tQrCode.getContent())) {
             qrCodeForm.getToGenerateContentTextArea().setText(tQrCode.getContent());
         } else {
-            qrCodeForm.getToGenerateContentTextArea().setText("https://github.com/arvinBaichuan/java-form-project");
+            qrCodeForm.getToGenerateContentTextArea().setText("https://github.com/arvinBaichuan/HyTool");
         }
 
         // 设置滚动条速度
