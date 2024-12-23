@@ -519,7 +519,7 @@
                         </goals>
                         <configuration>
                             <headerType>gui</headerType> <!-- gui 或 console -->
-                            <outfile>${project.build.directory}/${project.artifactId}.exe</outfile>
+                            <outfile>${project.build.directory}/${project.build.finalName}.exe</outfile>
                             <!--针对这个jar进行转成exe,jar名称后边是jar-with-dependencies，就是上边插件生成的名称-->
                             <jar>${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar</jar>
                             <errTitle>Error</errTitle>
@@ -543,7 +543,7 @@
                                 <txtProductVersion>${project.version}.0</txtProductVersion>
                                 <productName>${project.name}</productName>
                                 <internalName>${project.name}</internalName>
-                                <originalFilename>${project.name}.exe</originalFilename>
+                                <originalFilename>${project.build.finalName}.exe</originalFilename>
                             </versionInfo>
                         </configuration>
                     </execution>
