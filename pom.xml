@@ -480,6 +480,76 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!--用于jar打包成exe-->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version> <!-- 不可盲目更新版本 -->
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.baichuan.hy.tool.App</mainClass><!--主启动类，一定要有包路径-->
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef> <!--编译完的jar包名称会拼上这个-->
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id> <!-- this is used for inheritance merges -->
+                        <phase>package</phase> <!-- bind to the packaging phase -->
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--用于jar打包成exe-->
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>2.4.1</version>
+                <executions>
+                    <execution>
+                        <id>create-exe</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>gui</headerType> <!-- gui 或 console -->
+                            <outfile>${project.build.directory}/${project.artifactId}.exe</outfile>
+                            <!--针对这个jar进行转成exe,jar名称后边是jar-with-dependencies，就是上边插件生成的名称-->
+                            <jar>${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar</jar>
+                            <errTitle>Error</errTitle>
+
+                            <downloadUrl>http://java.com/download</downloadUrl>
+                            <supportUrl>http://www.example.com/support</supportUrl>
+                            <stayAlive>false</stayAlive>
+                            <jre>
+                                <bundledJreAsFallback>true</bundledJreAsFallback> <!-- 启用捆绑的 JRE 作为备选方案 -->
+                                <minVersion>17</minVersion>
+                                <!--<maxVersion>21</maxVersion> 放开后出现报错-->
+                                <path>C:\Program Files\Java\jdk-21.0.5</path>
+                                <maxHeapSize>512</maxHeapSize>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>${project.version}.0</fileVersion>
+                                <txtFileVersion>${project.version}.0</txtFileVersion>
+                                <fileDescription>${project.artifactId}</fileDescription>
+                                <copyright>Copyright (C) 2024</copyright>
+                                <productVersion>${project.version}.0</productVersion>
+                                <txtProductVersion>${project.version}.0</txtProductVersion>
+                                <productName>${project.name}</productName>
+                                <internalName>${project.name}</internalName>
+                                <originalFilename>${project.name}.exe</originalFilename>
+                            </versionInfo>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 </project>
