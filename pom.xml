@@ -474,7 +474,7 @@
                             </macConfig>
                             <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
                             <additionalResources>
-                                <additionalResource>${name}.l4j.ini</additionalResource>
+                                <additionalResource>${project.name}.l4j.ini</additionalResource>
                             </additionalResources>
                         </configuration>
                     </execution>
@@ -522,16 +522,25 @@
                             <outfile>${project.build.directory}/${project.build.finalName}.exe</outfile>
                             <!--针对这个jar进行转成exe,jar名称后边是jar-with-dependencies，就是上边插件生成的名称-->
                             <jar>${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar</jar>
+                            <icon>src/main/resources/icon/logo-exe.ico</icon>
                             <errTitle>Error</errTitle>
 
-                            <downloadUrl>http://java.com/download</downloadUrl>
-                            <supportUrl>http://www.example.com/support</supportUrl>
-                            <stayAlive>false</stayAlive>
+<!--                            <downloadUrl>http://java.com/download</downloadUrl>-->
+<!--                            <supportUrl>http://www.example.com/support</supportUrl>-->
+<!--                            <stayAlive>false</stayAlive>-->
+                            <classPath>
+                                <!--换成自己的主类-->
+                                <mainClass>com.baichuan.hy.tool.App</mainClass>
+                                <addDependencies>true</addDependencies>
+                                <preCp>anything</preCp>
+                            </classPath>
                             <jre>
-                                <bundledJreAsFallback>true</bundledJreAsFallback> <!-- 启用捆绑的 JRE 作为备选方案 -->
-                                <minVersion>17</minVersion>
-                                <!--<maxVersion>21</maxVersion> 放开后出现报错-->
-                                <path>C:\Program Files\Java\jdk-21.0.5</path>
+                                <requires64Bit>false</requires64Bit>
+                                <requiresJdk>false</requiresJdk>
+                                <minVersion>21</minVersion>
+<!--                                <maxVersion>21</maxVersion> &lt;!&ndash;放开后出现报错&ndash;&gt;-->
+                                <path>E:/Java/jdk-21.0.5</path>
+                                <initialHeapSize>128</initialHeapSize>
                                 <maxHeapSize>512</maxHeapSize>
                             </jre>
                             <versionInfo>
@@ -544,6 +553,7 @@
                                 <productName>${project.name}</productName>
                                 <internalName>${project.name}</internalName>
                                 <originalFilename>${project.build.finalName}.exe</originalFilename>
+                                <companyName>${project.name}</companyName>
                             </versionInfo>
                         </configuration>
                     </execution>
