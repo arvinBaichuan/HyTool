@@ -537,9 +537,9 @@
                             <jre>
                                 <requires64Bit>false</requires64Bit>
                                 <requiresJdk>false</requiresJdk>
-                                <minVersion>21</minVersion>
+                                <minVersion>17</minVersion>
 <!--                                <maxVersion>21</maxVersion> &lt;!&ndash;放开后出现报错&ndash;&gt;-->
-                                <path>E:/Java/jdk-21.0.5</path>
+                                <path>./jre</path><!--和打包好的exe处于同一目录下，启动exe时方便未安装jre的电脑调取jre环境，目前jre不能打包进exe-->
                                 <initialHeapSize>128</initialHeapSize>
                                 <maxHeapSize>512</maxHeapSize>
                             </jre>
